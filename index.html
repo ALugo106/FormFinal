@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Sleepy's Art</title>
+
+    <style>
+
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(94, 93, 92);
+            font-family: Permanent Marker;
+        }
+
+        #Header {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(69, 54, 67);
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        #Nav {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(40, 17, 43);
+        }
+
+        #Body {
+            width: 100%;
+            height: 553px;
+            color: rgb(53, 68, 58);
+        }
+
+            #Flex {
+                display: flex;
+            }
+
+            #NA {
+                width: 600px;
+                height: 50px;
+            }
+
+            #Form {
+                width: 1000px;
+                height: 450px;
+                background-color: rgb(120, 132, 117);
+                margin-left: 50px;
+                display: flex;
+            }
+                #Left {
+                    width: 500px;
+                    height: 400px;
+                    background-color: rgb(141, 170, 145);
+                    margin-top: 25px;
+                    border-right: 2px solid rgb(120, 132, 117);
+                    font-size: 20px;
+                    border-radius: 5%;
+                }
+
+                #a {
+                    display: flex;
+                }
+                    #Name {
+                        width: 250px;
+                        height: 400px;
+                    }
+
+                    #Input {
+                        width: 200px;
+                        height: 400px;
+                    }
+
+                #Right {
+                    width: 500px;
+                    height: 400px;
+                    background-color: rgb(141, 170, 145);
+                    margin-top: 25px;
+                    border-left: 2px solid rgb(120, 132, 117);
+                    font-size: 20px;
+                    align-items: center;
+                    border-radius: 5%;
+                }
+
+            #Side {
+                width: 250px;
+                height: 450px;
+                border: 2px solid rgb(120, 132, 117);
+                margin-left: 150px;
+                border-radius: 5%;
+                background-color: rgb(141, 170, 145);
+            }
+
+        #Footer {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(40, 17, 43);
+        }
+
+        input {
+            margin: 14px;
+            background-color: black;
+            color: aliceblue;
+            border: 2px solid rgb(76, 28, 82);
+            border-radius: 20%;
+        }
+
+        #a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #pa {
+            align-items: center;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 2px;
+        }
+
+        fieldset {
+            border: 5px solid rgb(127,145,114);
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="Header">
+        <h1>SleepyArt</h1>
+    </div>
+
+    <div id="Nav">
+
+    </div>
+
+    <div id="Body">
+        <div id="NA">
+
+        </div>
+
+        <div id="Flex">
+
+            <div id="Form">
+                <div id="Left">
+                    <form>
+                        <fieldset id="a">
+                        <legend>
+                            Sleepy Art
+                        </legend>
+                        <div id="aaa">
+                            <lable id="fname">First Name</lable>
+                            <input type="text" id="fname" name="firstname" placeholder="First Name">
+                        </div>
+                        <div>
+                            <label id="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                        </div>
+                        <div>
+                            <label id="add">Address</label>
+                            <input type="text" id="" name="address" placeholder="Address">
+                        </div>
+                        <div>
+                            <label id="city">City</label>
+                            <input type="text" id="fname" name="city" placeholder="City">
+                        </div>
+
+                        <div>
+                            <label id="st">State</label>
+                            <input list="op" placeholder="State">
+                            <datalist id="op">
+                                <option value="NM">
+                                <option value="AZ">
+                                <option value="NV">
+                                <option value="CA">
+                            </datalist>
+                        </div>
+                        <div>
+                            <label id="zip">ZIP</label>
+                            <input type="text" placeholder="ZIP">
+                        </div>
+                        <div>
+                            <label id="ph">Phone</label>
+                            <input type="tel" id="" name="address" placeholder="(111)-111-1111">
+                        </div>
+                    </fieldset>
+                    </form>
+                </div>
+
+                <div id="Right">
+                    <div id="pa">
+                        <form>
+                            <fieldset>
+                        <legend for="">Special Packaging</legend>
+                        <label>Yes</label>
+                        <input type="checkbox">
+                        <label>No</label>
+                        <input type="checkbox">
+                        <br>
+                        <label>Pick The Color of the Packaging</label>
+                        <input type="color">
+                        <br>
+                        <label>Level of Cursed (0-5)</label>
+                        <input type="range" min="0" max="5">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Any Extra Info</legend>
+                        <textarea>Enter Text Here...</textarea>
+                    </fieldset>
+                    <input type="submit">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="Side">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur expedita recusandae sapiente. Ratione, beatae perferendis voluptatibus similique ducimus nihil atque id eveniet voluptate officia repudiandae pariatur, corrupti iure eaque. Lorem ipsum dolor sit amet consectet.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Footer">
+
+    </div>
+</body>
+</html>
